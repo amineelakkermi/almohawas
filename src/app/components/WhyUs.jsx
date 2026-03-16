@@ -67,14 +67,14 @@ const WhyUs = () => {
             </div>
 
             <Title as='h2' className={`${styles.title2} text-black`}>
-              لماذا تختار المهوس
-              <br />
+              لماذا تختار <span className='text-beige'>المهوس</span> {''}
+              <br className='hidden lg:blocl' />
               للمحاماة والاستشارات
             </Title>
           </div>
 
           {/* Right side */}
-          <Paragraph className="text-[15px] lg:text-[17px] text-gray-600 leading-[1.9] max-w-[420px] mt-2 md:mt-auto">
+          <Paragraph className="text-[15px] lg:text-[17px] text-gray-600 leading-[1.9] lg:max-w-[420px] mt-2 md:mt-auto">
             نقدم في شركة المهوس للمحاماة والاستشارات القانونية خبرات قانونية متخصصة وحلولًا عملية تلبي احتياجات الأفراد والشركات، من خلال فريق من المحامين ذوي الكفاءة العالية
           </Paragraph>
         </div>

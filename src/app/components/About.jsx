@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section id="about" className="relative bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       <div className={`${styles.container} ${styles.padding}`}>
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12 lg:gap-20">
 
           {/* Content side */}
           <div className="flex-1 flex flex-col gap-7 max-w-[580px]">
@@ -22,8 +22,8 @@ const About = () => {
           
           {/* Titre */}
        <Title as="h1" className={`${styles.title} text-blue font-bold`}>
-       نقدم لأعمالكم قيمة 
-       <br />
+       نقدم لأعمالكم قيمة {""}
+       <br className='hidden lg:block' />
        <span className="text-beige">حقيقية</span> وخبرة <br />
       قانونية راسخة
        </Title>
@@ -31,7 +31,7 @@ const About = () => {
 
 
             {/* Paragraph */}
-            <Paragraph className={`${styles.paragraph} text-gray-500 leading-[1.9] max-w-[500px]`}>
+            <Paragraph className={`${styles.paragraph} text-gray-500 leading-[1.9] lg:max-w-[500px]`}>
               شركة محاماة مهنية سعودية، نقدم حلولًا وخدمات قانونية متكاملة للكيانات التجارية ورواد الأعمال والأفراد عبر نخبة من المحامين والباحثين المتخصصين ذوي الكفاءة، وذلك وفقًا لأعلى معايير الجودة المهنية. نؤمن بالشفافية التامة مع عملائنا ونسعى دائمًا لتحقيق أفضل النتائج
             </Paragraph>
 
