@@ -11,7 +11,7 @@ import Cta from "./components/Cta";
 export default function Home(){
   return (
    <div className="relative">
-    <div className="relative min-h-[90vh] lg:min-h-[100vh]">
+    <div className="relative min-h-[90vh]">
       {/* Background image qui couvre tout */}
       <Image
         src={background} 

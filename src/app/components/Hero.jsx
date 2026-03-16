@@ -5,7 +5,7 @@ import ScrollTop from "./ScrollTop";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] lg:min-h-[100vh] flex items-center justify-start">
+    <section className="relative min-h-[90vh] flex items-center justify-start">
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6
        gap-8
        text-start h-[100%] flex flex-col mt-20">
