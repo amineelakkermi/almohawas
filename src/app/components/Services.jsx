@@ -138,7 +138,7 @@ const Services = () => {
       if (!strip) return
 
       const stripWidth = strip.scrollWidth
-      const scrollLength = stripWidth - window.innerWidth + 40
+      const scrollLength = stripWidth - window.innerWidth + 80
 
       gsap.to(strip, {
         x: () => scrollLength,
