@@ -16,7 +16,7 @@ const Hero = () => {
        <Title 
        as="h1"
        className={`${styles.title} text-white font-bold`}>
-       شركة المهوس للمحاماة
+       شركة <span className="text-beige">المهوس </span> للمحاماة
        <br />
        والإستشارات القانونية
        </Title>
