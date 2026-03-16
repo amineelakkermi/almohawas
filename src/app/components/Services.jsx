@@ -198,7 +198,7 @@ const Services = () => {
               </div>
 
             {/* Right: small paragraph */}
-            <Paragraph className="text-[15px] lg:text-[18px] text-white/60 leading-[1.9] max-w-[350px] mt-2 md:mt-auto">
+            <Paragraph className="text-[15px] lg:text-[18px] text-white/60 leading-[1.9] max-w-[350px] md:mt-auto">
               يجمع فريقنا بين الخبرة القانونية والرؤية العملية لتقديم حلول مخصصة تناسب احتياجات كل عميل
             </Paragraph>
           </div>

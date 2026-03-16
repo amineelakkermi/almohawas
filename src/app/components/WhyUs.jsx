@@ -74,7 +74,7 @@ const WhyUs = () => {
           </div>
 
           {/* Right side */}
-          <Paragraph className="text-[15px] lg:text-[17px] text-gray-600 leading-[1.9] lg:max-w-[420px] mt-2 md:mt-auto">
+          <Paragraph className="text-[15px] lg:text-[17px] text-gray-600 leading-[1.9] lg:max-w-[420px]  md:mt-auto">
             نقدم في شركة المهوس للمحاماة والاستشارات القانونية خبرات قانونية متخصصة وحلولًا عملية تلبي احتياجات الأفراد والشركات، من خلال فريق من المحامين ذوي الكفاءة العالية
           </Paragraph>
         </div>
