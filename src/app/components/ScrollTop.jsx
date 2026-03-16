@@ -1,5 +1,7 @@
 'use client'
 
+import Link from "next/link"
+
 const ScrollTop = () => {
 
   const handleScrollTop = () => {
@@ -10,7 +12,8 @@ const ScrollTop = () => {
   }
 
   return (
-    <div className="fixed right-4 md:right-8 bottom-4 z-[9999]"> 
+   <Link href="#about">
+    <div className="absolute left-4 md:left-48 bottom-24 z-[9999]"> 
 
       <button
         onClick={handleScrollTop}
@@ -38,13 +41,13 @@ const ScrollTop = () => {
             direction="ltr"
           >
             <textPath href="#circle" startOffset="0%">
-              • SCROLL TOP • SCROLL TOP •
+              • SCROLL Down • SCROLL Down •
             </textPath>
           </text>
         </svg>
 
         {/* Flèche centre */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute rotate-180 inset-0 flex items-center justify-center">
           <svg
             width="18"     
             height="18"
@@ -54,6 +57,7 @@ const ScrollTop = () => {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
+            
           >
             <line x1="12" y1="18" x2="12" y2="6" />
             <polyline points="6 12 12 6 18 12" />
@@ -62,6 +66,7 @@ const ScrollTop = () => {
 
       </button>
     </div>
+   </Link>
   )
 }
 
