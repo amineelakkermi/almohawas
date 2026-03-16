@@ -24,7 +24,8 @@ const About = () => {
        <Title as="h1" className={`${styles.title} text-blue font-bold`}>
        نقدم لأعمالكم قيمة {""}
        <br className='hidden lg:block' />
-       <span className="text-beige">حقيقية</span> وخبرة <br />
+       <span className="text-beige">حقيقية</span> وخبرة  {''}
+       <br className='hidden lg:block' />
       قانونية راسخة
        </Title>
 
