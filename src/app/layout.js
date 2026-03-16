@@ -11,7 +11,7 @@ const tajawal = Tajawal({
 
 export const metadata = {
   title: {
-    default: "المهوس | مكتب استشارات وخدمات قانونية",
+    default: "المهوس | شركة محاماة واستشارات قانونية",
     template: "%s | المهوس للاستشارات القانونية",
   },
   description:

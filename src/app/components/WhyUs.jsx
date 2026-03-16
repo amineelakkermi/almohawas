@@ -66,7 +66,7 @@ const WhyUs = () => {
               <span className="text-[14px] text-blue font-medium">لمــاذا نحن ؟</span>
             </div>
 
-            <Title as='h2' className={`${styles.title2} text-black`}>
+            <Title as='h2' className={`${styles.title2} text-blue`}>
               لماذا تختار <span className='text-beige'>المهوس</span> {''}
               <br className='hidden lg:blocl' />
               للمحاماة والاستشارات
