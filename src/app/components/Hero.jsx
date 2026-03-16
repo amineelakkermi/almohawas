@@ -2,6 +2,8 @@ import Link from "next/link";
 import styles from "../style";
 import SocialMedia from "./SocialMedia";
 import ScrollTop from "./ScrollTop";
+import Title from "./Title";
+import Paragraph from "./Paragraph";
 
 const Hero = () => {
   return (
@@ -11,17 +13,13 @@ const Hero = () => {
        text-start h-[100%] flex flex-col mt-20">
 
         {/* Titre */}
-        <h1 className={`${styles.title} text-white`}>
-          شركة المهوس للمحاماة
-          <br />
-          والإستشارات القانونية
-        </h1>
+        <Title title={`شركة المهوس للمحاماة\nوالإستشارات القانونية`} className={`${styles.title} text-white font-bold`} />
 
         {/* Paragraphe */}
-        <p className={`${styles.paragraph} text-white/70 max-w-[550px] md:max-w-[650px]`}>
+        <Paragraph className={`${styles.paragraph} text-white/70 max-w-[550px] md:max-w-[650px]`}>
           نقدّم حلولًا قانونية متكاملة للأفراد والشركات، ونرافق عملاءنا بخبرة قانونية راسخة ورؤية
-          احترافية لضمان حماية الحقوق وتحقيق أفضل النتائج وفق أعلى المعايير المهنية.
-        </p>
+          احترافية لضمان حماية الحقوق وتحقيق أفضل النتائج وفق أعلى المعايير المهنية
+        </Paragraph>
 
         {/* Boutons */}
         <div className="flex flex-row gap-4 justify-start">
@@ -42,18 +40,10 @@ const Hero = () => {
           </Link>
         </div>
 
-
-        <div>
         <SocialMedia />
-        </div>
       </div>
-
- 
-    
-      
     </section>
   );
 };
 
 export default Hero;
-
