@@ -1,36 +1,45 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useEffect, useRef } from "react"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.registerPlugin(ScrollTrigger)
 
-const Title = ({ title, className }) => {
+const Title = ({
+  children,
+  className = "",
+  as = "h2",
+}) => {
+
   const titleRef = useRef(null)
+  const Tag = as
 
   useEffect(() => {
-    gsap.from(titleRef.current, {
-      y: 30,
+
+    const el = titleRef.current
+
+    gsap.from(el, {
+      y: 40,
       opacity: 0,
       duration: 1,
-      ease: 'power3.out',
+      ease: "power3.out",
       scrollTrigger: {
-        trigger: titleRef.current,
-        start: 'top 85%',
-        end: 'bottom 15%',
-        toggleActions: 'play none none reverse',
-        markers: false,
-      },
+        trigger: el,
+        start: "top 85%",
+        toggleActions: "play none none reverse",
+      }
     })
+
   }, [])
 
   return (
-    <h1 ref={titleRef} className={className}>
-      {title.split('\n').map((line, i) => (
-        <span key={i} className="block">{line}</span>
-      ))}
-    </h1>
+    <Tag
+      ref={titleRef}
+      className={className}
+    >
+      {children}
+    </Tag>
   )
 }
 

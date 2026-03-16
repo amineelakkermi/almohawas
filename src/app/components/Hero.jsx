@@ -12,8 +12,15 @@ const Hero = () => {
        gap-8
        text-start h-[100%] flex flex-col mt-20">
 
-        {/* Titre */}
-        <Title title={`شركة المهوس للمحاماة\nوالإستشارات القانونية`} className={`${styles.title} text-white font-bold`} />
+       {/* Titre */}
+       <Title 
+       as="h1"
+       className={`${styles.title} text-white font-bold`}>
+       شركة المهوس للمحاماة
+       <br />
+       والإستشارات القانونية
+       </Title>
+       
 
         {/* Paragraphe */}
         <Paragraph className={`${styles.paragraph} text-white/70 max-w-[550px] md:max-w-[650px]`}>

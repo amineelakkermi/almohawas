@@ -3,6 +3,8 @@ import styles from "../style";
 import Image from "next/image";
 import pattern from '../../../public/main/pattern.png'
 import Link from "next/link";
+import Title from "./Title";
+import Paragraph from "./Paragraph";
 
 
 const Cta = () => {
@@ -28,13 +30,13 @@ const Cta = () => {
        </div>
       <div className="z-30 flex flex-col gap-8 items-center">
         {/* content */}
-        <h2 className={`${styles.title2} text-white  font-bold text-center`}>
+        <Title className={`${styles.title2} text-white  font-bold text-center`}>
          حلول قانونية تلبي احتياجات الشركات
-        </h2>
+        </Title>
 
-        <p className={`${styles.paragraph} text-gray-400 text-center max-w-[600px]`}>
+        <Paragraph className={`${styles.paragraph} text-gray-400 text-center max-w-[600px]`}>
          شركة محاماة مهنية سعودية تقدم كافة الحلول القانونية للكيانات التجارية ورجال ورواد الأعمال من خلال نخبة من المحامين والباحثين أصحاب الكفاءة العالية وفقاً لأعلى معايير الجودة المهنية
-        </p>
+        </Paragraph>
 
           <Link
     href="#contact"

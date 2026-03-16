@@ -2,6 +2,8 @@ import React from 'react'
 import styles from '../style'
 import Image from 'next/image'
 import ScrollTop2 from './ScrollTop2'
+import Title from './Title'
+import Paragraph from './Paragraph'
 
 const About = () => {
   return (
@@ -17,19 +19,21 @@ const About = () => {
               <span className="text-[14px] text-blue font-medium">من نحن</span>
             </div>
 
-            {/* Title */}
-            <h2 className={`${styles.title} text-blue leading-[1.25]`}>
-              نقدم لأعمالكم قيمة
-              <br />
-              <span className="text-beige">حقيقية</span> وخبرة
-              <br />
-              قانونية راسخة
-            </h2>
+          
+          {/* Titre */}
+       <Title as="h1" className={`${styles.title} text-blue font-bold`}>
+       نقدم لأعمالكم قيمة 
+       <br />
+       <span className="text-beige">حقيقية</span> وخبرة <br />
+      قانونية راسخة
+       </Title>
+
+
 
             {/* Paragraph */}
-            <p className={`${styles.paragraph} text-gray-500 leading-[1.9] max-w-[500px]`}>
+            <Paragraph className={`${styles.paragraph} text-gray-500 leading-[1.9] max-w-[500px]`}>
               شركة محاماة مهنية سعودية، نقدم حلولًا وخدمات قانونية متكاملة للكيانات التجارية ورواد الأعمال والأفراد عبر نخبة من المحامين والباحثين المتخصصين ذوي الكفاءة، وذلك وفقًا لأعلى معايير الجودة المهنية. نؤمن بالشفافية التامة مع عملائنا ونسعى دائمًا لتحقيق أفضل النتائج
-            </p>
+            </Paragraph>
 
             {/* Divider */}
             <div className="w-12 h-[2px] bg-beige" />

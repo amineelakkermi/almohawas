@@ -5,6 +5,8 @@ import Image from 'next/image'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import styles from '../style'
+import Paragraph from './Paragraph'
+import Title from './Title'
 
 const servicesData = [
   {
@@ -185,17 +187,20 @@ const Services = () => {
                   خدماتنا
                 </span>
               </div>
-              <h2 className={`${styles.title2} text-white`}>
-                نقدم لعملائنا خدمات قانونية
+             
+               <Title
+               as="h2"
+               className={`${styles.title2} text-white font-bold`}>
+               نقدم لعملائنا خدمات قانونية
                 <br className="hidden md:block" />
-                شاملة ومتكاملة
-              </h2>
-            </div>
+               شاملة ومتكاملة
+               </Title>
+              </div>
 
             {/* Right: small paragraph */}
-            <p className="text-[15px] lg:text-[18px] text-white/60 leading-[1.9] max-w-[350px] mt-2 md:mt-auto">
+            <Paragraph className="text-[15px] lg:text-[18px] text-white/60 leading-[1.9] max-w-[350px] mt-2 md:mt-auto">
               يجمع فريقنا بين الخبرة القانونية والرؤية العملية لتقديم حلول مخصصة تناسب احتياجات كل عميل
-            </p>
+            </Paragraph>
           </div>
 
           {/* Desktop grid — hidden on mobile */}

@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from '../style'
+import Title from './Title'
+import Paragraph from './Paragraph'
 
 const reasons = [
   {
@@ -64,17 +66,17 @@ const WhyUs = () => {
               <span className="text-[14px] text-blue font-medium">لمــاذا نحن ؟</span>
             </div>
 
-            <h2 className={`${styles.title2} text-black`}>
+            <Title as='h2' className={`${styles.title2} text-black`}>
               لماذا تختار المهوس
               <br />
               للمحاماة والاستشارات
-            </h2>
+            </Title>
           </div>
 
           {/* Right side */}
-          <p className="text-[15px] lg:text-[17px] text-gray-600 leading-[1.9] max-w-[420px] mt-2 md:mt-auto">
+          <Paragraph className="text-[15px] lg:text-[17px] text-gray-600 leading-[1.9] max-w-[420px] mt-2 md:mt-auto">
             نقدم في شركة المهوس للمحاماة والاستشارات القانونية خبرات قانونية متخصصة وحلولًا عملية تلبي احتياجات الأفراد والشركات، من خلال فريق من المحامين ذوي الكفاءة العالية
-          </p>
+          </Paragraph>
         </div>
 
         {/* Cards Grid */}
