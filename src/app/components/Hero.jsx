@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../style";
 import SocialMedia from "./SocialMedia";
 
@@ -23,21 +24,21 @@ const Hero = () => {
 
         {/* Boutons */}
         <div className="flex flex-row gap-4 justify-start">
-          <a
+          <Link
             href="#services"
-            className="bg-white text-black text-[15px] lg:text-[16px] rounded-full
+            className="bg-white flex justify-center items-center text-black text-[15px] lg:text-[16px] rounded-full
             transition-all duration-300 py-3 px-8 hover:bg-white hover:text-black"
           >
             اكتشف خدماتنا
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="#contact"
-            className="border-2 border-white/50 text-white text-[15px] lg:text-[16px] rounded-full
+            className="border-2 border-white/50 flex justify-center items-center text-white text-[15px] lg:text-[16px] rounded-full
             transition-all duration-300 py-3 px-8 hover:bg-white/10"
           >
             تواصل معنا
-          </a>
+          </Link>
         </div>
 
 
