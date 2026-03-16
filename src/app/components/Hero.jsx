@@ -49,7 +49,7 @@ const Hero = () => {
       </div>
 
  
-     <ScrollTop />
+    
       
     </section>
   );

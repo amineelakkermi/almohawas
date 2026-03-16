@@ -1,8 +1,8 @@
 'use client'
-import { useRef , useEffect } from "react"
+import { useRef , useEffect, useState } from "react"
 import gsap from "gsap"
 
-const ScrollTop = () => {
+const ScrollTop2 = () => {
   const circleRef = useRef(null);
 
   const handleScrollTop = () => {
@@ -20,11 +20,10 @@ const ScrollTop = () => {
     });
   }, []);
 
- 
 
-   
+
   return (
-    <div className={`fixed left-4 xl:left-24 2xl:left-36 bottom-12 z-[9999]`}> 
+    <div className={`fixed right-4 md:right-8 bottom-12 z-[9999]`}> 
       <button
         onClick={handleScrollTop}
         className="relative w-16 h-16 md:w-28 md:h-28 cursor-pointer"
@@ -58,4 +57,4 @@ const ScrollTop = () => {
   )
 }
 
-export default ScrollTop;
+export default ScrollTop2;

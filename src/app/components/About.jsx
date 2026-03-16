@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../style'
 import Image from 'next/image'
+import ScrollTop2 from './ScrollTop2'
 
 const About = () => {
   return (
