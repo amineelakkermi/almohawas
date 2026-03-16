@@ -1,5 +1,9 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import styles from '../style'
 
 const servicesData = [
@@ -119,19 +123,51 @@ const ServiceCard = ({ item, className = '' }) => (
 )
 
 const Services = () => {
+  const sectionRef = useRef(null)
+  const stripRef = useRef(null)
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+
+    const mm = gsap.matchMedia()
+
+    mm.add('(max-width: 767px)', () => {
+      const strip = stripRef.current
+      if (!strip) return
+
+      const stripWidth = strip.scrollWidth
+      const scrollLength = stripWidth - window.innerWidth + 40
+
+      gsap.to(strip, {
+        x: () => scrollLength,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          pin: true,
+          scrub: 1,
+          start: 'top top',
+          end: () => `+=${stripWidth}`,
+          invalidateOnRefresh: true,
+        },
+      })
+    })
+
+    return () => mm.revert()
+  }, [])
+
   return (
-    <section id="services" className="relative min-h-screen overflow-hidden">
-     
-    <div className='absolute inset-0 w-full min-h-[100%]'>
-       {/* Background image */}
-      <Image
-        src="/main/office.png"
-        alt=""
-        fill
-        className="fixed object-cover"
-        quality={85}
-      />
-    </div>
+    <section id="services" ref={sectionRef} className="relative min-h-screen overflow-hidden">
+
+      <div className="absolute inset-0 w-full min-h-[100%]">
+        {/* Background image */}
+        <Image
+          src="/main/office.png"
+          alt=""
+          fill
+          className="fixed object-cover"
+          quality={85}
+        />
+      </div>
 
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-blue/80 opacity-65" />
@@ -162,20 +198,31 @@ const Services = () => {
             </p>
           </div>
 
-          {/* Cards — staggered layout like reference */}
-          <div className="flex flex-col gap-5">
-            {/* Top row: 2 cards offset to center */}
-            <div className="grid mt-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+          {/* Desktop grid — hidden on mobile */}
+          <div className="hidden md:grid mt-5 grid-cols-2 md:grid-cols-3 gap-5">
+            {servicesData.map((item, i) => (
+              <ServiceCard key={i} item={item} />
+            ))}
+          </div>
+
+          {/* Mobile horizontal scroll strip — visible only on mobile */}
+          <div className="md:hidden mt-5 overflow-visible">
+            <div
+              ref={stripRef}
+              className="flex flex-nowrap gap-4"
+            >
               {servicesData.map((item, i) => (
-                <ServiceCard key={i} item={item} />
+                <ServiceCard
+                  key={i}
+                  item={item}
+                  className="w-[280px] flex-shrink-0"
+                />
               ))}
             </div>
-
-          
           </div>
 
           {/* CTA Button */}
-          <div className="flex justify-center ">
+          <div className="flex justify-center">
             <a
               href="#contact"
               className="inline-flex items-center gap-2 bg-white text-blue px-7 py-3.5 
@@ -192,7 +239,6 @@ const Services = () => {
         </div>
       </div>
 
-      
     </section>
   )
 }

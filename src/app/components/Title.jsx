@@ -20,7 +20,7 @@ const Title = ({ title, className }) => {
         start: 'top 85%',
         end: 'bottom 15%',
         toggleActions: 'play none none reverse',
-        markers: false, // set to true for debugging
+        markers: false,
       },
     })
   }, [])
