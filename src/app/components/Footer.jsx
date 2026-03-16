@@ -33,7 +33,7 @@ const Footer = () => {
               className="object-contain  filter brightness-0 invert"
             />
 
-            <p className={`font-normal text-center lg:text-right mr-6 text-[15px] lg:text-[15px] leading-[30.8px] text-gray-300 max-w-[300px]`}>
+            <p className={`font-normal text-center lg:text-right mr-0 lg:mr-6 text-[15px] lg:text-[15px] leading-[30.8px] text-gray-300 max-w-[300px]`}>
          شركة محاماة سعودية تقدم خدمات وحلولًا قانونية متكاملة للشركات ورواد الأعمال والأفراد  
             </p>
           </div>
