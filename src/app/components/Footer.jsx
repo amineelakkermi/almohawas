@@ -39,7 +39,10 @@ const Footer = () => {
           </div>
 
           {/* Footer Links */}
-          <ul className="flex items-center gap-6 flex-wrap justify-center">
+          <ul className="flex flex-col lg:flex-row items-center gap-6 flex-wrap justify-center">
+            <li className="flex lg:hidden text-white/60 hover:text-white text-[16px] transition-colors duration-300">
+              العناوين
+            </li>
             {footerLinks.map((link) => (
               <li key={link.href}>
                 <Link
@@ -109,7 +112,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="flex justify-between items-center mt-6 pt-4 border-t border-white/5 text-center lg:text-right">
+        <div className="flex flex-col lg:flex-row justify-between items-center mt-6 pt-4 border-t border-white/5 text-center lg:text-right">
           <p className="text-white/40 text-[13px] leading-[32px] mr-6">
             المملكة العربية السعودية
             <br />
