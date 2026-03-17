@@ -46,6 +46,7 @@ html {
   --font-handicrafts: var(--font-handicrafts);
   --font-tajwal: var(--font-tajwal);
   --font-avenir: var(--font-avenir);
+  --font-lyon: var(--font-lyon);
 }
 
 
@@ -91,6 +92,10 @@ body {
 
 .font-avenir {
   font-family: var(--font-avenir);
+}
+
+.font-lyon {
+  font-family: var(--font-lyon);
 }
 
 

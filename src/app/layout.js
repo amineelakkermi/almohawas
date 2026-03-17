@@ -11,6 +11,13 @@ const avenir = localFont({
   display: "swap",
 })
 
+const lyon = localFont({
+  src: "./fonts/lyon-arabic-display-regular.otf",
+  variable: "--font-lyon",
+  weight: "400",
+  display: "swap",
+})
+
 
 export const metadata = {
   title: {
@@ -42,7 +49,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={`${avenir.variable} font-avenir antialiased`}>
+      <body className={`${avenir.variable} ${lyon.variable} font-avenir antialiased`}>
         <ScrollTop />
         {children}
         <Footer />
