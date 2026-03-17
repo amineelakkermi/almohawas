@@ -189,7 +189,7 @@ const Services = () => {
              
                <Title
                as="h2"
-               className={`${styles.title2} text-white font-bold`}>
+               className={`${styles.title2} text-white font-bold leading-[1.4]`}>
                نقدم لعملائنا خدمات قانونية
                 <br className="hidden md:block" />
                شاملة ومتكاملة
