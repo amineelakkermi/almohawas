@@ -13,7 +13,7 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0d0d0d] text-white relative overflow-hidden rounded-t-[20px]">
+    <footer className="bg-blue text-white relative overflow-hidden rounded-t-[20px]">
     
 
 
