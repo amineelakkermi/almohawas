@@ -69,7 +69,7 @@ const Navbar = () => {
          {/* CTA Button */}
          <div className="hidden lg:block">
          <Link
-    href="#contact"
+    href="#cta"
     className="group flex items-center gap-3 text-white px-4 py-2 rounded-full text-[14px] font-medium
     bg-white/10 backdrop-blur-md border border-white/20
     transition-all duration-300 hover:bg-white hover:text-black"

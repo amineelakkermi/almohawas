@@ -41,7 +41,7 @@ const infos = [
 
 const OurInfo = () => {
   return (
-    <section className="w-full py-12">
+    <section id="info" className="w-full py-12">
       <div className={`max-w-7xl mx-auto px-6 ${styles.marginY}`}>
         
         {/* Grid */}

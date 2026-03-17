@@ -39,7 +39,7 @@ const Hero = () => {
           </Link>
 
           <Link
-            href="#contact"
+            href="#cta"
             className="border-2 border-white/50 flex justify-center items-center text-white text-[15px] lg:text-[16px] rounded-full
             transition-all duration-300 py-3 px-8 hover:bg-white/10"
           >
