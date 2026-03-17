@@ -31,7 +31,7 @@ const Cta = () => {
       <div className="z-30 flex flex-col gap-8 items-center">
         {/* content */}
         <Title className={`${styles.title2} text-white  font-bold text-center`}>
-         حلول قانونية تلبي احتياجات الشركات
+         حلول <span className="text-beige">قانونية</span> تلبي احتياجات الشركات
         </Title>
 
         <Paragraph className={`${styles.paragraph} text-gray-400 text-center max-w-[600px]`}>
