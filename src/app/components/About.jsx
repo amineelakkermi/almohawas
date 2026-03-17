@@ -65,7 +65,7 @@ const About = () => {
                   alt="المؤسس"
                   width={550}
                   height={700}
-                  className="object-cover w-full h-[500px] lg:h-[620px]"
+                  className="object-cover duration-500 hover:scale-105 w-full h-[500px] lg:h-[620px]"
                 />
                 {/* Gradient overlay at bottom */}
                 <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-blue/60 to-transparent" />
