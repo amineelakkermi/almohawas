@@ -180,7 +180,7 @@ const Services = () => {
           {/* Header area */}
           <div className="flex flex-col md:flex-row justify-between items-start gap-8">
             {/* Left: label + title */}
-            <div className="flex flex-col gap-8 max-w-[650px]">
+            <div className="flex flex-col gap-10 max-w-[650px]">
              {/* Badge */}
             <div className="inline-flex items-center gap-2 border border-blue/10 bg-white px-5 py-2.5 rounded-full w-fit shadow-sm">
               <div className="w-1.5 h-1.5 bg-beige rounded-full" />

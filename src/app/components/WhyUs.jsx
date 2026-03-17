@@ -56,8 +56,8 @@ const WhyUs = () => {
       <div className={`${styles.container} ${styles.marginY} flex flex-col gap-16 relative z-10`}>
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start">
-          {/* Left side */}
-          <div className="flex flex-col gap-8 max-w-[600px]">
+          {/* Right side */}
+          <div className="flex flex-col gap-10 max-w-[600px]">
             <div
               className="inline-flex items-center gap-2 border border-blue/10
               bg-white px-5 py-2.5 rounded-full w-fit shadow-sm"
@@ -73,7 +73,7 @@ const WhyUs = () => {
             </Title>
           </div>
 
-          {/* Right side */}
+          {/* Left side */}
           <Paragraph className="text-[15px] lg:text-[17px] text-gray-600 leading-[1.9] lg:max-w-[420px]  md:mt-auto">
             نقدم في شركة المهوس للمحاماة والاستشارات القانونية خبرات قانونية متخصصة وحلولًا عملية تلبي احتياجات الأفراد والشركات، من خلال فريق من المحامين ذوي الكفاءة العالية
           </Paragraph>

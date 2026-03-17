@@ -15,7 +15,7 @@ const Hero = () => {
        {/* Titre */}
        <Title 
        as="h1"
-       className={`${styles.title} text-white font-bold`}>
+       className={`${styles.title} text-white`}>
        شركة <span className="text-beige">المهوس </span> للمحاماة
        <br />
        والإستشارات القانونية
@@ -23,7 +23,7 @@ const Hero = () => {
        
 
         {/* Paragraphe */}
-        <Paragraph className={`${styles.paragraph} text-white/70 max-w-[550px] md:max-w-[650px]`}>
+        <Paragraph className={`${styles.paragraph} font-[400] text-white/70 max-w-[550px] md:max-w-[650px]`}>
           نقدّم حلولًا قانونية متكاملة للأفراد والشركات، ونرافق عملاءنا بخبرة قانونية راسخة ورؤية
           احترافية لضمان حماية الحقوق وتحقيق أفضل النتائج وفق أعلى المعايير المهنية
         </Paragraph>

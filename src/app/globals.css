@@ -45,6 +45,7 @@ html {
   --color-beige: #d7b499;
   --font-handicrafts: var(--font-handicrafts);
   --font-tajwal: var(--font-tajwal);
+  --font-avenir: var(--font-avenir);
 }
 
 
@@ -86,7 +87,10 @@ body {
 
 .font-tajwal{
   font-family: var(--font-tajwal);
+}
 
+.font-avenir {
+  font-family: var(--font-avenir);
 }
 
 

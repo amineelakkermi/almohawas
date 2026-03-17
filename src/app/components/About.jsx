@@ -12,7 +12,7 @@ const About = () => {
         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12 lg:gap-20">
 
           {/* Content side */}
-          <div className="flex-1 flex flex-col gap-7 max-w-[580px]">
+          <div className="flex-1 flex flex-col gap-10 max-w-[580px]">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 border border-blue/10 bg-white px-5 py-2.5 rounded-full w-fit shadow-sm">
               <div className="w-1.5 h-1.5 bg-beige rounded-full" />

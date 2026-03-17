@@ -1,13 +1,16 @@
-import { Tajawal } from "next/font/google"
+import localFont from "next/font/local"
 import "./globals.css"
 import Footer from "./components/Footer"
 import ScrollTop from "./components/ScrollTop"
 
-const tajawal = Tajawal({
-  subsets: ["arabic"],
-  weight: ["400", "500", "700", "800"],
+
+const avenir = localFont({
+  src: "./fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf",
+  variable: "--font-avenir",
+  weight: "400",
   display: "swap",
 })
+
 
 export const metadata = {
   title: {
@@ -33,10 +36,13 @@ export const metadata = {
   category: "Legal Services",
 }
 
+
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={`${tajawal.className} antialiased`}>
+      <body className={`${avenir.variable} font-avenir antialiased`}>
         <ScrollTop />
         {children}
         <Footer />
