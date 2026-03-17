@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section id="about" className="relative bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       <div className={`${styles.container} ${styles.padding}`}>
-        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12 lg:gap-20">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center gap">
 
           {/* Content side */}
           <div className="flex-1 flex flex-col gap-10 max-w-[580px]">
@@ -25,8 +25,7 @@ const About = () => {
        نقدم لأعمالكم قيمة {""}
        <br className='hidden lg:block' />
        <span className="text-beige">حقيقية</span> وخبرة  {''}
-       <br className='hidden lg:block' />
-      قانونية راسخة
+      قانونية 
        </Title>
 
 
