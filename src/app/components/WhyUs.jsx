@@ -55,7 +55,7 @@ const WhyUs = () => {
 
       <div className={`${styles.container} ${styles.marginY} flex flex-col gap-16 relative z-10`}>
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-8">
           {/* Right side */}
           <div className="flex flex-col gap-10 max-w-[600px]">
             <div
