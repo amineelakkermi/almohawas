@@ -175,12 +175,12 @@ const Services = () => {
       <div className="absolute inset-0 bg-blue/80 opacity-65" />
 
       <div className={`relative z-10 ${styles.padding}`}>
-        <div className={`${styles.container} flex flex-col gap`}>
+        <div className={`${styles.container} flex flex-col gap-16`}>
 
           {/* Header area */}
           <div className="flex flex-col md:flex-row justify-between items-start gap-8">
             {/* Left: label + title */}
-            <div className="flex flex-col gap-5 max-w-[650px]">
+            <div className="flex flex-col gap-8 max-w-[650px]">
              {/* Badge */}
             <div className="inline-flex items-center gap-2 border border-blue/10 bg-white px-5 py-2.5 rounded-full w-fit shadow-sm">
               <div className="w-1.5 h-1.5 bg-beige rounded-full" />

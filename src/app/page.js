@@ -7,6 +7,7 @@ import About from "./components/About";
 import WhyUs from "./components/WhyUs";
 import Services from "./components/Services";
 import Cta from "./components/Cta";
+import OurInfo from "./components/OurInfo";
 
 export default function Home(){
   return (
@@ -26,6 +27,7 @@ export default function Home(){
     </div>
 
     <About />
+    <OurInfo />
     <Services />
     <WhyUs />
 

@@ -1,0 +1,193 @@
+import React from 'react'
+import styles from '../style'
+import OurInfo from './OurInfo'
+import Image from 'next/image'
+
+const About = () => {
+  return (
+    <section id='about' className={`relative min-h-screen bg-gradient-to-b from-gray-50 to-white flex flex-col gap  ${styles.padding}`}>
+    
+    <div className='gradient1 z-10' />
+
+    <div className={`${styles.container} z-20 ${styles.marginY} 
+    flex
+    flex-col 
+    justify-center 
+    items-center 
+    gap-8`}>
+    
+    <div className="w-full md:w-[30%]">
+    <div className="flex items-center gap-4">
+
+  {/* line + dot */}
+  <div className="flex items-center">
+    <div className="w-2 h-2 bg-beige rounded-full"></div>
+    <hr className="w-[60px] h-[3px] bg-beige border-none" />
+  </div>
+
+  <span className={`text-[24px] lg:text-[28px] font-bold text-beige`}>
+    من نحــــن
+  </span>
+
+  {/* line + dot */}
+  <div className="flex items-center">
+    <hr className="w-[60px] h-[3px] bg-beige border-none" />
+    <div className="w-2 h-2 bg-beige rounded-full"></div>
+  </div>
+
+    </div>
+    </div>
+    
+    <div className='w-full md:w-[70%] flex flex-col  gap'>
+    <p className={`${styles.paragraph2} text-center w-[100%] md:max-w-[1050px] text-gray-700`}>
+    <span className=''>شركة محاماة مهنية سعودية </span>
+      نقدم حلولًا وخدمات قانونية متكاملة للكيانات التجارية ورواد الأعمال والأفراد
+         عبر نخبة من المحامين والباحثين المتخصصين ذوي الكفاءة، وذلك وفقًا لأعلى معايير الجودة المهنية.
+    </p>
+    </div>
+    </div>
+
+    <div className={`${styles.container}`}>
+    <OurInfo />
+
+    </div>
+
+    </section>
+  )
+}
+
+export default About
+
+
+
+
+
+
+
+
+
+
+import React from 'react'
+import styles from '../style'
+import OurInfo from './OurInfo'
+import Image from 'next/image'
+
+const About = () => {
+  return (
+    <section id='about' className={`min-h-screen bg-gradient-to-b from-gray-50 to-white flex flex-col gap  ${styles.padding}`}>
+    
+    
+    <div className={`${styles.container} ${styles.marginY} 
+    flex
+    flex-col md:flex-row 
+    justify-center md:justify-between 
+    items-center md:items-start 
+    gap-8`}>
+    
+    <div className="w-full md:w-[30%]">
+    <div className="flex items-center gap-4">
+
+  {/* line + dot */}
+  <div className="flex items-center">
+    <div className="w-2 h-2 bg-blue rounded-full"></div>
+    <hr className="w-[60px] h-[3px] bg-blue border-none" />
+  </div>
+
+  <span className={`text-[24px] lg:text-[28px] font-bold text-blue`}>
+    من نحــــن
+  </span>
+
+  {/* line + dot */}
+  <div className="flex items-center">
+    <hr className="w-[60px] h-[3px] bg-black border-none" />
+    <div className="w-2 h-2 bg-black rounded-full"></div>
+  </div>
+
+    </div>
+    </div>
+    
+    <div className='w-full md:w-[70%] flex flex-col  gap'>
+    <p className={`${styles.paragraph2}  w-[100%] md:max-w-[1050px] text-gray-700`}>
+    <span className='mr-0 md:mr-24'>شركة محاماة مهنية سعودية </span>
+      نقدم حلولًا وخدمات قانونية متكاملة للكيانات التجارية ورواد الأعمال والأفراد
+         عبر نخبة من المحامين والباحثين المتخصصين ذوي الكفاءة، وذلك وفقًا لأعلى معايير الجودة المهنية.
+    </p>
+    </div>
+    </div>
+
+    <div className={`${styles.container}`}>
+    <OurInfo />
+
+    </div>
+
+    </section>
+  )
+}
+
+export default About
+
+
+
+/* */
+
+
+import React from 'react'
+import styles, { layout } from '../style'
+import OurInfo from './OurInfo'
+import Image from 'next/image'
+
+const About = () => {
+  return (
+    <section id='about' className={`min-h-screen bg-gradient-to-b from-gray-50 to-white flex flex-col justify-center items-center  ${styles.padding}`}>
+    
+    
+    <div className={`${styles.container} 
+    flex flex-col md:flex-row justify-between items-start gap
+    `}>
+    
+    <div className={`${layout.sectionInfo} gap-5`}>
+    <span className={`text-[24px] lg:text-[28px] font-bold text-blue`}>
+    من نحــــن
+    </span>
+
+ 
+
+
+    <p className={`${styles.paragraph2}  w-[100%] md:max-w-[650px] text-gray-700`}>
+    <span>شركة محاماة مهنية سعودية </span>
+      نقدم حلولًا وخدمات قانونية متكاملة للكيانات التجارية ورواد الأعمال والأفراد
+         عبر نخبة من المحامين والباحثين المتخصصين ذوي الكفاءة، وذلك وفقًا لأعلى معايير الجودة المهنية.
+    </p>
+
+ 
+
+    </div>
+
+
+    <div className={`${layout.sectionImg}`}>
+    
+    <div className='bg-black w-[500px] h-[350px] p-5 rounded-[25px] flex justify-center items-center'>
+     <Image src="/main/office.png"
+     alt='office'
+     fill
+     className='object-contain rounded-[25px]'
+     />
+    </div>
+
+    </div>
+    
+   
+    </div>
+
+    {/* 
+   <div className={`${styles.container}`}>
+    <OurInfo />
+
+    </div> 
+    */}
+
+    </section>
+  )
+}
+
+export default About
