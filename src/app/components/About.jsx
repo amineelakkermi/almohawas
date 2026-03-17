@@ -41,7 +41,7 @@ const About = () => {
 
             {/* CTA Button */}
             <a
-              href="#contact"
+              href="#info"
               className="inline-flex items-center justify-center rounded-full gap-2 bg-blue text-white 
                 px-8 py-4 w-fit text-[15px] font-medium tracking-wide
                 hover:bg-blue/90 transition-all duration-300 shadow-lg shadow-blue/20"
