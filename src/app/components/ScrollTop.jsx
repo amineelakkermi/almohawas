@@ -40,7 +40,7 @@ const ScrollTop = () => {
 
           <text fill="#b8b8b8ff" fontSize="10" fontWeight="400" letterSpacing="1" direction="ltr">
             <textPath href="#circle" startOffset="0%">
-              • SCROLL TOP • SCROLL TOP •
+              • اصعد للأعلى • اصعد للأعلى •
             </textPath>
           </text>
         </svg>

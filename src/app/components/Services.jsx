@@ -158,7 +158,7 @@ const Services = () => {
   }, [])
 
   return (
-    <section id="services" ref={sectionRef} className="relative min-h-screen overflow-hidden">
+    <section id="services" ref={sectionRef} className={`${styles.padding} relative min-h-screen overflow-hidden`}>
 
       <div className="absolute inset-0 w-full min-h-[100%]">
         {/* Background image */}
@@ -203,14 +203,14 @@ const Services = () => {
           </div>
 
           {/* Desktop grid — hidden on mobile */}
-          <div className="hidden md:grid mt-5 grid-cols-2 md:grid-cols-3 gap-5">
+          <div className="grid mt-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
             {servicesData.map((item, i) => (
               <ServiceCard key={i} item={item} />
             ))}
           </div>
 
           {/* Mobile horizontal scroll strip — visible only on mobile */}
-          <div className="md:hidden mt-5 overflow-visible">
+          <div className="hidden mt-5 overflow-visible">
             <div
               ref={stripRef}
               className="flex flex-nowrap gap-4"
