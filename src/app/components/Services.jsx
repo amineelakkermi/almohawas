@@ -1,9 +1,11 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import Image from 'next/image'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/pagination'
 import styles from '../style'
 import Paragraph from './Paragraph'
 import Title from './Title'
@@ -91,6 +93,7 @@ const ServiceCard = ({ item, className = '' }) => (
     className={`group relative bg-white/95 backdrop-blur-sm px-6 py-8
       shadow-[0_4px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)]
       transition-all duration-500 ease-out hover:-translate-y-1
+      h-full flex flex-col justify-between
       ${className}`}
     style={{
       clipPath: 'polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%)',
@@ -125,41 +128,8 @@ const ServiceCard = ({ item, className = '' }) => (
 )
 
 const Services = () => {
-  const sectionRef = useRef(null)
-  const stripRef = useRef(null)
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger)
-
-    const mm = gsap.matchMedia()
-
-    mm.add('(max-width: 767px)', () => {
-      const strip = stripRef.current
-      if (!strip) return
-
-      const stripWidth = strip.scrollWidth
-      const scrollLength = stripWidth - window.innerWidth + 80
-
-      gsap.to(strip, {
-        x: () => scrollLength,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          pin: true,
-          scrub: 1,
-          start: 'top top',
-          end: () => `+=${stripWidth}`,
-          invalidateOnRefresh: true,
-        },
-      })
-    })
-
-    return () => mm.revert()
-  }, [])
-
   return (
-    <section id="services" ref={sectionRef} className={`${styles.padding} relative min-h-screen overflow-hidden`}>
-
+    <section id="services" className={`${styles.padding} relative min-h-screen overflow-hidden`}>
       <div className="absolute inset-0 w-full min-h-[100%]">
         {/* Background image */}
         <Image
@@ -203,26 +173,51 @@ const Services = () => {
           </div>
 
           {/* Desktop grid — hidden on mobile */}
-          <div className="grid mt-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+          <div className="hidden md:grid mt-5 grid-cols-2 md:grid-cols-3 gap-5">
             {servicesData.map((item, i) => (
               <ServiceCard key={i} item={item} />
             ))}
           </div>
 
-          {/* Mobile horizontal scroll strip — visible only on mobile */}
-          <div className="hidden mt-5 overflow-visible">
-            <div
-              ref={stripRef}
-              className="flex flex-nowrap gap-4"
+          {/* Mobile Swiper carousel — visible only on mobile */}
+          <div className="md:hidden mt-5">
+            <Swiper
+              modules={[Pagination, Autoplay]}
+              spaceBetween={60}
+              slidesPerView={1.2}
+              centeredSlides={false}
+              loop={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }}
+              pagination={{
+                clickable: true,
+                dynamicBullets: true,
+              
+              }}
+              breakpoints={{
+                480: {
+                  slidesPerView: 1.5,
+                },
+                640: {
+                  slidesPerView: 2,
+                },
+              }}
+              className="!pb-12 [&_.swiper-pagination-bullet]:!bg-white [&_.swiper-pagination-bullet-active]:!bg-white [&_.swiper-pagination-bullet]:!opacity-50 [&_.swiper-pagination-bullet-active]:!opacity-100 [&_.swiper-pagination-bullet]:!border-white [&_.swiper-pagination-bullet-active]:!border-white"
             >
               {servicesData.map((item, i) => (
-                <ServiceCard
-                  key={i}
-                  item={item}
-                  className="w-[280px] flex-shrink-0"
-                />
+                <SwiperSlide key={i} style={{ height: 'auto' }}>
+                  <div className="h-full">
+                    <ServiceCard
+                      item={item}
+                      className="w-[280px] h-full flex-shrink-0"
+                    />
+                  </div>
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
           </div>
 
           {/* CTA Button */}
