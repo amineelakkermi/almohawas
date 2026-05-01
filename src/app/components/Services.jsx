@@ -181,7 +181,7 @@ const Services = () => {
           <div className="md:hidden mt-5">
             <Swiper
               modules={[Pagination, Autoplay]}
-              spaceBetween={60}
+              spaceBetween={120}
               slidesPerView={1.2}
               centeredSlides={false}
               loop={true}
@@ -221,7 +221,7 @@ const Services = () => {
           {/* CTA Button */}
           <div className="flex justify-center">
             <a
-              href="#contact"
+              href="#cta"
               className="inline-flex items-center gap-2 bg-white text-blue px-7 py-3.5 
                 rounded-full text-[15px] font-medium 
                 hover:bg-white/90 transition-all duration-300 shadow-lg shadow-black/10"
