@@ -14,7 +14,7 @@ const servicesData = [
   {
     title: 'التمثيل والتقاضي',
     content:
-      'الترافع في القضايا التجارية والعقارية والعمالية والإدارية واللجان شبه القضائية، تقديم الاعتراضات بطلب الاستئناف والنقض والتماس إعادة النظر.',
+      "حماية مصالحك أمام كافة المحاكم واللجان القضائية ببراعة في الترافع وقوة في الحجة.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" />
@@ -24,7 +24,7 @@ const servicesData = [
   {
     title: 'الاستشارات القانونية',
     content:
-      'تقديم حلول قانونية مبتكرة وفعّالة لمعالجة مختلف التحديات القانونية والاحتراز من مخاطرها.',
+      "صياغة الرأي القانوني الاستباقي الذي يجنبك المخاطر ويمنحك الأمان في كل خطوة.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
@@ -36,7 +36,7 @@ const servicesData = [
   {
     title: 'الشركات والامتياز التجاري Franchise',
     content:
-      'تأسيس الشركات وحوكمتها وتحويلها وصياغة قرارات تعديل عقودها، وزيادة وتخفيض رأس المال وتحديد صلاحيات الإدارة التنفيذية ومجالس الإدارات، تأسيس صناديق الاستثمار.',
+     "من التأسيس إلى الحوكمة؛ نضع خارطة الطريق القانونية لنمو كيانك التجاري وتوسعه.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
@@ -52,7 +52,7 @@ const servicesData = [
   {
     title: 'أعمال التوثيق',
     content:
-      'توثيق التصرفات العقارية، توثيق قيمة المال المنقول، توثيق الرهن وفكه، توثيق إقرارات الكفالة الشخصية والغرمية وفكها، إصدار الوكالات.',
+      "توثيق عقودك وتصرفاتك العقارية بدقة تضمن ثبوت الحقوق واستدامتها طبقاً للأنظمة.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -66,20 +66,17 @@ const servicesData = [
   {
     title: 'الإفلاس',
     content:
-     'تقديم طلبات الإفلاس وقيدها لدى المحاكم التجارية، تقديم طلب إجراء التسوية الوقائية، إجراء إعادة التنظيم المالي، وإجراء التصفية.',   
+     "إيجاد الحلول القانونية لإعادة التنظيم المالي وحماية الكيانات من الانهيار بكل احترافية.",
       icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
       </svg>
     ),
   },
-
    {
     title: 'التركة والأوقاف',
     content:
-      
-    'تصفية التركات، حل نزاعات الورثة، تولي أعمال نظارة الأوقاف، توثيق وبيان شروط ومصارف الأوقاف والوصايا.',
-      
+      "إدارة وتصفية التركات وتوثيق الأوقاف برؤية تضمن حقوق الورثة وتنفذ وصايا الواقفين.",
      icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -168,7 +165,8 @@ const Services = () => {
 
             {/* Right: small paragraph */}
             <Paragraph className="text-[15px] lg:text-[18px] text-white/60 leading-[1.9] max-w-[350px] md:mt-auto">
-              يجمع فريقنا بين الخبرة القانونية والرؤية العملية لتقديم حلول مخصصة تناسب احتياجات كل عميل
+            يجمع فريقنا بين صرامة القانون ومرونة الفكر التجاري لتقديم حلول مخصصة تناسب احتياجاتكم.
+
             </Paragraph>
           </div>
 
@@ -228,7 +226,7 @@ const Services = () => {
                 rounded-full text-[15px] font-medium 
                 hover:bg-white/90 transition-all duration-300 shadow-lg shadow-black/10"
             >
-              احجز استشارتك الآن
+             احجز جلسة استشارية متخصصة
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="m15 18-6-6 6-6" />
               </svg>

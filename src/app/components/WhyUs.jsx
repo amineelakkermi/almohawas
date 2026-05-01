@@ -6,9 +6,9 @@ import Paragraph from './Paragraph'
 const reasons = [
   {
     number: '01',
-    title: 'فهم عميق لأعمالك',
+    title: 'فهم عميق لقطاعك',
     content:
-      'نبذل الوقت الكافي لاستيعاب نظام منشأتك والسياق الذي تعمل فيه ومواطن القوة والضعف لديها والتحديات والفرص التي تواجهها.',
+      "لا نقرأ النصوص القانونية فحسب، بل نفهم سياق عملك التجاري لنقدم حلولاً قابلة للتنفيذ.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="11" cy="11" r="8" />
@@ -18,9 +18,9 @@ const reasons = [
   },
   {
     number: '02',
-    title: 'خبرة قانونية متخصصة',
+    title: 'خبرة نوعية ممتدة',
     content:
-      'فريقنا يضم نخبة من المحامين والمستشارين القانونيين بخبرات تتجاوز عقدين في مختلف التخصصات القانونية والقضائية.',
+      "فريقنا يضم مستشارين عاصروا التحولات القانونية في المملكة لأكثر من عقدين من الزمن.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
@@ -29,9 +29,9 @@ const reasons = [
   },
   {
     number: '03',
-    title: 'نتائج قابلة للقياس',
+    title: 'نتائج ملموسة',
     content:
-      'نلتزم بتحقيق نتائج ملموسة وقابلة للقياس لعملائنا، مع تقديم تقارير دورية شفافة عن سير القضايا والإجراءات القانونية.',
+      "نحن شركاء في النتيجة؛ نركز على تحقيق أهدافك بأقصر الطرق القانونية وأكثرها أماناً.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
@@ -67,9 +67,11 @@ const WhyUs = () => {
             </div>
 
             <Title as='h2' className={`${styles.title2} text-blue leading-[1.4]`}>
-              لماذا تختار <span className='text-beige'>المهوس</span> {''}
-              <br className='hidden lg:blocl' />
-              للمحاماة والاستشارات
+              لماذا يختار رواد الأعمال  {''}
+              <br className='block md:hidden' />
+            
+              <span className='text-beige'>شركة المهوس</span> {''}
+             
             </Title>
           </div>
 
