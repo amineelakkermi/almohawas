@@ -11,13 +11,14 @@ const Hero = () => {
         className="relative z-10 w-full max-w-7xl mx-auto px-6
         gap-8 text-start h-[100%] flex flex-col mt-20"
       >
-        {/* H1 */}
-        <Title as="h1" className={`${styles.title} text-white`}>
-          ريادة قانونية <span className="text-beige">تصون</span> حقوقكم..
-          <br />
-            ورؤية استراتيجية تدعم تطلعاتكم
-        </Title>
-
+       <Title as="h1" className={`${styles.title} text-white`}>
+       <span className="block">
+        ريادة قانونية <span className="text-beige">تصون</span> حقوقكم..
+       </span>
+       <span className="block">
+      ورؤية استراتيجية تدعم تطلعاتكم
+     </span>
+ </Title>
         {/* Subtitle */}
         <Paragraph
           className={`${styles.paragraph} font-[400] text-white/70 max-w-[550px] md:max-w-[650px]`}
