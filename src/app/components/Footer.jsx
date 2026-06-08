@@ -28,7 +28,7 @@ const Footer = () => {
               className="object-contain filter brightness-0 invert"
             />
 
-            {/* ✅ تم حذف النص التسويقي واستبداله بنص خفيف */}
+           
             <p className="text-white/50 text-[14px] max-w-[280px] text-center lg:text-right">
               نضع خبرتنا القانونية لخدمتكم، ونرافقكم بثقة في كل خطوة.
             </p>
@@ -80,7 +80,7 @@ const Footer = () => {
           {/* Address */}
           <p className="text-white/40 text-[13px] leading-[28px]">
             المملكة العربية السعودية <br />
-            القصيم، بريدة، طريق علي بن أبي طالب
+            القصيم ، بريدة ، طريق ابو بكر الصديق
           </p>
 
           {/* Copyright */}

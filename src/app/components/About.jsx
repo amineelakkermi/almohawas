@@ -85,7 +85,7 @@ const About = () => {
                   <div className="w-10 h-[2px] bg-beige" />
                   <div>
                     <p className="text-white text-[16px] font-bold">
-                      عبد العزيز علي المهوس
+                     ياسر علي المهوس
                     </p>
                     <p className="text-white/60 text-[13px]">
                       مدير المكتب
